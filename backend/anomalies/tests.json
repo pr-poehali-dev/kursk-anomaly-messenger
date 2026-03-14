@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Get anomalies list returns 200",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 200
+    }
+  ]
+}

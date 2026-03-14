@@ -1,0 +1,12 @@
+CREATE TABLE t_p36965254_kursk_anomaly_messen.users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password_hash VARCHAR(255) NOT NULL,
+  role VARCHAR(20) NOT NULL DEFAULT 'user',
+  level VARCHAR(20) NOT NULL DEFAULT 'seeker',
+  xp INTEGER NOT NULL DEFAULT 0,
+  bio TEXT,
+  created_at TIMESTAMP DEFAULT NOW(),
+  last_seen TIMESTAMP DEFAULT NOW(),
+  is_banned BOOLEAN DEFAULT FALSE
+);

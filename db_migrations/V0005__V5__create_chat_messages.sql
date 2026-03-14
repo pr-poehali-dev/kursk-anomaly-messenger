@@ -1,0 +1,1 @@
+CREATE TABLE t_p36965254_kursk_anomaly_messen.chat_messages (id SERIAL PRIMARY KEY, chat_id INTEGER NOT NULL, user_id INTEGER, author_name VARCHAR(50), txt TEXT NOT NULL, created_at TIMESTAMP DEFAULT NOW());

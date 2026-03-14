@@ -1,0 +1,10 @@
+{
+  "tests": [
+    {
+      "name": "Check session without token returns 401",
+      "method": "GET",
+      "path": "/",
+      "expectedStatus": 401
+    }
+  ]
+}
